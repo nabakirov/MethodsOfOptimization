@@ -1,9 +1,11 @@
 package main
 
 import (
-	"github.com/nabakirov/mo/core"
+	"github.com/nabakirov/MethodsOfOptimization/core"
+	_"github.com/nabakirov/MethodsOfOptimization/cli"
 	"fmt"
 	"math"
+	_"github.com/tucnak/climax"
 )
 
 func f(x float64) float64 {
@@ -68,6 +70,11 @@ func goldenSectionSearchTest() {
 }
 
 
+
 func main() {
-	pocketSearchTest()
+	evenSearchTest()
+	// mo := climax.New("mo")
+
+	// mo.AddCommand(cli.EsmCliCommand)
+	// mo.Run()
 }
