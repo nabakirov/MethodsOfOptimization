@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/nabakirov/MethodsOfOptimization/core"
-	_"github.com/nabakirov/MethodsOfOptimization/cli"
+	"github.com/nabakirov/MethodsOfOptimization/cli"
 	"fmt"
 	"math"
 	_"github.com/tucnak/climax"
@@ -72,9 +72,8 @@ func goldenSectionSearchTest() {
 
 
 func main() {
-	evenSearchTest()
-	// mo := climax.New("mo")
+	cli.ESM()
+	// evenSearchTest()
 
-	// mo.AddCommand(cli.EsmCliCommand)
-	// mo.Run()
+	
 }

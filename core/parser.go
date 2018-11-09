@@ -3,7 +3,7 @@ package core
 import "github.com/Knetic/govaluate"
 
 
-func Parser(fstring string) func(float64) float64 {
+func Parse(fstring string) func(float64) float64 {
 	expression, err := govaluate.NewEvaluableExpression(fstring)
 	if err != nil {
 		panic(err)
